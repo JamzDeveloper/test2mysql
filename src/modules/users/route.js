@@ -13,7 +13,7 @@ routes.post(
     check("firstName", "firstName is required").not().isEmpty(),
     check("password", "password is required").not().isEmpty(),
     check("email", "invalid email").isEmail(),
-    validateJwt,
+    // validateJwt,
     validateFields,
   ],
   createUser
